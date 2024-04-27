@@ -30,7 +30,7 @@ public class Main {
                 case 3:
                     System.out.println("Geben Sie das Nummernschild des ausfahrenden Fahrzeugs ein:");
                     String nummernschildAusfahren = scanner.next();
-                    parkhaus.autoAusfahren(nummernschildAusfahren);
+                    parkhaus.FahrzeugAusfahren(nummernschildAusfahren);
                     break;
                 case 4:
                     parkhaus.anzeigenFreieParkplaetze();

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 class Parkhaus {
-    private ArrayList<Etage> etagen;
+    private final ArrayList<Etage> etagen;
 
     public Parkhaus() {
         etagen = new ArrayList<>();
@@ -28,7 +28,7 @@ class Parkhaus {
         System.out.println("Es sind keine freien Parkplätze verfügbar.");
     }
 
-    public void autoAusfahren(String nummernschild) {
+    public void FahrzeugAusfahren(String nummernschild) {
         for (Etage etage : etagen) {
             for (Parkplatz parkplatz : etage.parkplaetze) {
                 if (parkplatz.istBelegt() && parkplatz.getFahrzeug().getNummernschild().equals(nummernschild)) {
